@@ -29,6 +29,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(EditInstanceOnly, Category = "Components")
+		class UPatrolComponent* PatrolComponent = nullptr;
+
 protected:
 
 	/** Resets HMD orientation in VR. */
